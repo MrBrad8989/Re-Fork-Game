@@ -35,16 +35,6 @@ Desarrollado íntegramente en **Kotlin**, el juego destaca por el uso de **Jetpa
 | 💾 **Persistencia** | Tu progreso, monedas y configuraciones se guardan automáticamente usando **DataStore**. |
 | 📱 **Diseño Moderno** | Interfaz Material Design 3 con animaciones fluidas, transiciones y feedback háptico. |
 
----
-
-## 📸 Capturas
-
-<div align="center">
-  <img src="docs/screenshots/menu.png" alt="Menú Principal" width="200"/>
-  <img src="docs/screenshots/game.png" alt="Pantalla de Juego" width="200"/>
-  <img src="docs/screenshots/shop.png" alt="Tienda" width="200"/>
-  <img src="docs/screenshots/settings.png" alt="Configuración" width="200"/>
-</div>
 
 ---
 
