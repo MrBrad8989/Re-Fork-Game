@@ -1,138 +1,79 @@
-﻿# 🎲 Re-Fork Game
-**Juego de Parchís moderno desarrollado en Kotlin con Jetpack Compose**
----
-## 📖 Descripción
-**Re-Fork Game** es una versión moderna y mejorada del clásico juego de Parchís, desarrollada completamente en **Kotlin** utilizando **Jetpack Compose** para una interfaz de usuario fluida y reactiva. Proyecto de 2º DAM.
-### ✨ Características Principales
-- 🎮 **Modo Multijugador Local** - Juega con 2-4 jugadores
-- 🤖 **IA Inteligente** - CPU con diferentes niveles de dificultad
-- 🎨 **Interfaz Moderna** - Material Design 3 y Jetpack Compose
-- 🛒 **Sistema de Tienda** - Compra skins con monedas ganadas
-- 💰 **Sistema de Monedas** - Gana jugando y desbloquea contenido
-- 🎯 **Skins Personalizables** - 3 temas: Classic, Midnight, Candy
-- ⚙️ **Configuración Completa** - Sonido, vibración, animaciones, velocidad IA
-- 💾 **Guardado Automático** - Persistencia con DataStore
-- 🎨 **Animaciones Fluidas** - Transiciones suaves y efectos visuales
-- 📱 **Diseño Responsive** - Adaptado a diferentes pantallas
----
-## 🚀 Instalación
-### Requisitos
-- Android Studio Hedgehog | 2023.1.1+
-- JDK 17+
-- Android SDK 34+
-- Dispositivo con Android 7.0 (API 24)+
-### Pasos
-1. **Clona el repositorio**
-   ```bash
-   git clone https://github.com/tu-usuario/ReForkParchisKotlin.git
-   cd ReForkParchisKotlin
-   ```
-2. **Abre en Android Studio**
-3. **Sincroniza Gradle**
-4. **Ejecuta**
-   ```bash
-   ./gradlew installDebug
-   ```
----
-## 🎮 Cómo Jugar
-1. Abre la app con logo RF animado
-2. Toca JUGAR
-3. Configura jugadores (2-4) y colores
-4. Toca círculos para asignar colores
-5. Iniciar Partida y juega
-### Reglas
-- 🎲 Tira el dado
-- 🏠 Saca con 5
-- 🎯 Mueve tocando fichas
-- 🍴 Come rivales
-- 🏆 Mete todas tus fichas primero
-### Monedas
-- +10 por ficha en meta
-- +5 por comer rival
-- +50 por ganar
----
-## 🛠️ Tecnologías
-- **Kotlin** 100%
-- **Jetpack Compose** - UI
-- **Material Design 3**
-- **Navigation Compose**
-- **ViewModel & StateFlow**
-- **DataStore** - Persistencia
-- **Coroutines**
----
-## 🏗️ Arquitectura MVVM
-```
-View (Compose) → ViewModel → Model (Engine + Data)
-```
-### Estructura
-```
-app/src/main/java/com/example/parchismania/
-├── ui/
-│   ├── pantallas/ (MenuPrincipal, ConfiguracionPartida, etc)
-│   ├── screens/ (GameScreen, VictoryScreen, ShopScreen)
-│   ├── widgets/ (ParchisBoard, AppLogo)
-│   ├── theme/
-│   └── AppNav.kt
-├── engine/ (GameEngine, GameState)
-├── data/ (BoardSkin, Wallet, Settings)
-└── GameViewModel.kt
-```
----
-## 🎨 Logo RF
-```
-    ╔══════════╗
-    ║  R   F   ║
-    ║  • • • • ║
-    ╚══════════╝
-```
-- Letras RF bold
-- 4 puntos (dado)
-- Gradiente moderno
-- Vectorial
-- Animado
----
-## 📊 Estadísticas
-- **8,000+** líneas de código
-- **45+** archivos
-- **6** pantallas principales
-- **25+** componentes
-- **3** skins del tablero
----
-## 🚀 Roadmap
-### v1.0.0 (Actual)
-- ✅ Juego completo
-- ✅ IA 3 niveles
-- ✅ Sistema monedas/tienda
-- ✅ 3 skins
-- ✅ Configuración
-- ✅ Guardado auto
-### v2.0.0 (Futuro)
-- [ ] Multijugador online
-- [ ] Más skins
-- [ ] Sistema logros
-- [ ] Estadísticas
-- [ ] Tutorial
-- [ ] Modo torneo
----
-## 🤝 Contribuir
-1. Fork
-2. Branch (`git checkout -b feature/X`)
-3. Commit (`git commit -m 'Add X'`)
-4. Push (`git push origin feature/X`)
-5. Pull Request
----
-## 📝 Licencia
-MIT License - Copyright (c) 2026 Re-Fork Game
----
-## 👨‍💻 Autor
-Proyecto de 2º DAM - Desarrollo de Aplicaciones Multiplataforma
----
-## ❓ FAQ
-**¿Offline?** Sí, funciona sin internet.
-**¿Solo contra CPU?** Sí, 1 humano + CPUs.
-**¿Se guardan monedas?** Sí, todo se guarda automáticamente.
----
-<div align=center>
-**Hecho con ❤️ usando Kotlin y Jetpack Compose**
-⭐ Dale una estrella si te gusta ⭐
+# 🎲 Re-Fork Game
+
+<div align="center">
+
+![Kotlin](https://img.shields.io/badge/Kotlin-100%25-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android%20Studio-Hedgehog-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-UI-4285F4?style=for-the-badge&logo=android&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+![API](https://img.shields.io/badge/Min%20SDK-24-green?style=for-the-badge&logo=android)
+
+**Una reinvención moderna del clásico juego de Parchís, construida con la potencia de Kotlin y Jetpack Compose.**
+
+[Ver Demo](#-capturas) • [Instalación](#-instalación) • [Cómo Jugar](#-cómo-jugar) • [Contribuir](#-contribuir)
+
 </div>
+
+---
+
+## 📖 Descripción
+
+**Re-Fork Game** es un proyecto académico de 2º DAM (Desarrollo de Aplicaciones Multiplataforma) que lleva el tradicional juego de mesa a la era digital moderna.
+
+Desarrollado íntegramente en **Kotlin**, el juego destaca por el uso de **Jetpack Compose** para crear una interfaz de usuario reactiva, fluida y altamente personalizable. No es solo un juego, es una demostración técnica de arquitectura limpia (MVVM), persistencia de datos y gestión de estados complejos en Android.
+
+---
+
+## ✨ Características Principales
+
+| Característica | Descripción |
+| :--- | :--- |
+| 🎮 **Multijugador Híbrido** | Soporte para 2 a 4 jugadores en el mismo dispositivo, mezclando humanos y CPUs. |
+| 🤖 **IA Adaptativa** | Juega contra la CPU con velocidades configurables (Lenta, Normal, Rápida). |
+| 🎨 **Personalización Total** | Elige entre 3 skins de tablero únicos: **Classic**, **Midnight** (Oscuro) y **Candy** (Vibrante). |
+| 💰 **Economía de Juego** | Gana monedas jugando y desbloquea nuevos diseños en la Tienda integrada. |
+| 💾 **Persistencia** | Tu progreso, monedas y configuraciones se guardan automáticamente usando **DataStore**. |
+| 📱 **Diseño Moderno** | Interfaz Material Design 3 con animaciones fluidas, transiciones y feedback háptico. |
+
+---
+
+## 📸 Capturas
+
+<div align="center">
+  <img src="docs/screenshots/menu.png" alt="Menú Principal" width="200"/>
+  <img src="docs/screenshots/game.png" alt="Pantalla de Juego" width="200"/>
+  <img src="docs/screenshots/shop.png" alt="Tienda" width="200"/>
+  <img src="docs/screenshots/settings.png" alt="Configuración" width="200"/>
+</div>
+
+---
+
+## 🛠️ Stack Tecnológico
+
+El proyecto utiliza las últimas tecnologías recomendadas para el desarrollo Android moderno:
+
+* **Lenguaje:** [Kotlin](https://kotlinlang.org/) (100%)
+* **UI Toolkit:** [Jetpack Compose](https://developer.android.com/jetpack/compose) (Material Design 3)
+* **Arquitectura:** MVVM (Model-View-ViewModel)
+* **Navegación:** Navigation Compose
+* **Gestión de Estado:** `StateFlow` y `ViewModel`
+* **Persistencia de Datos:** [DataStore Preferences](https://developer.android.com/topic/libraries/architecture/datastore) (Reemplazo moderno de SharedPreferences)
+* **Concurrencia:** Coroutines
+* **Build System:** Gradle Kotlin DSL
+
+---
+
+## 🏗️ Estructura del Proyecto
+
+El código sigue una arquitectura limpia y modular para facilitar el mantenimiento:
+
+```text
+app/src/main/java/com/example/parchismania/
+├── data/              # Capa de Datos (DataStore, Modelos de Persistencia)
+├── engine/            # Lógica pura del juego (Reglas, Movimientos, IA)
+├── ui/                # Capa de Presentación (Compose)
+│   ├── pantallas/     # Pantallas de configuración y menú
+│   ├── screens/       # Pantallas principales (Juego, Tienda, Victoria)
+│   ├── theme/         # Tema y tipografía personalizada
+│   └── widgets/       # Componentes reutilizables (Tablero, Fichas, Logo)
+└── GameViewModel.kt   # Nexo entre la UI y la Lógica (State Management)
