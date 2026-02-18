@@ -67,3 +67,39 @@ app/src/main/java/com/example/parchismania/
 │   ├── theme/         # Tema y tipografía personalizada
 │   └── widgets/       # Componentes reutilizables (Tablero, Fichas, Logo)
 └── GameViewModel.kt   # Nexo entre la UI y la Lógica (State Management)
+```
+
+---
+
+## 🎮 Guía de Juego y Reglas
+
+El juego sigue las reglas tradicionales del Parchís con algunas adaptaciones para partidas rápidas:
+
+### Mecánicas Básicas
+1.  **Inicio:** Pulsa "JUGAR", selecciona de 2 a 4 jugadores (puedes mezclar Humanos y CPU) y elige sus colores.
+2.  **Salida:** Necesitas sacar un **5** para sacar una ficha de casa a la casilla de salida.
+3.  **Movimiento:** Toca cualquier ficha resaltada para moverla.
+4.  **El 6:** Si sacas un 6, repites turno. ¡Cuidado! Si sacas tres 6 seguidos, tu última ficha movida vuelve a casa.
+
+### Sistema de Puntuación y Economía
+Gana monedas para comprar skins en la tienda. Las recompensas están definidas en el motor del juego:
+
+* **+50 monedas:** Ganar la partida.
+* **+15 monedas:** Comer una ficha rival (Captura).
+* **+10 monedas:** Meter una ficha en la meta.
+* **+2 monedas:** Sacar una ficha de casa.
+
+> **Nota:** Las monedas se guardan automáticamente entre sesiones.
+
+---
+
+---
+
+## 🗺️ Roadmap y Mejoras Futuras
+
+- [x] **v1.0.0 - MVP Completo:** Motor de juego, IA básica, Tienda y Persistencia.
+- [ ] **v1.1.0 - Mejoras de IA:** Implementar algoritmo Minimax para una CPU más difícil.
+- [ ] **v2.0.0 - Online:** Implementar Firebase Realtime Database para multijugador remoto.
+- [ ] **Sonido:** Añadir efectos de sonido al tirar dados y mover fichas.
+
+---
