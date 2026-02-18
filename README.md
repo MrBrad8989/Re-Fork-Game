@@ -93,8 +93,6 @@ Gana monedas para comprar skins en la tienda. Las recompensas están definidas e
 
 ---
 
----
-
 ## 🗺️ Roadmap y Mejoras Futuras
 
 - [x] **v1.0.0 - MVP Completo:** Motor de juego, IA básica, Tienda y Persistencia.
